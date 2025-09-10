@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html> 
+   <head>
+<title> Diseño Grafico </title>
+   </head> 
+   <body> 
+ <h2>Galería de Imágenes</h2>
+<img src="desktop_b0b46e16-2a85-41ce-b4ee-0917eeede62a" alt="portada">
+<img src="A FEMALE GRAPHIC DESIGNER - Diseñadora gráfica" alt="tecnicas">
+<img src="download (5)" alt="teoria del color">
+
+<h3>Encuesta sobre Diseño Gráfico</h3>
+
+  <form action="procesar.php" method="post">
+    
+    <!-- 1. Nombre -->
+    <label for="nombre">1. ¿Cuál es tu nombre?</label><br>
+    <input type="text" id="nombre" name="nombre"><br><br>
+
+    <!-- 2. Herramienta favorita -->
+    <label for="herramienta">2. ¿Qué software de diseño utilizas más?</label><br>
+    <select id="herramienta" name="herramienta">
+      <option value="photoshop">Adobe Photoshop</option>
+      <option value="illustrator">Adobe Illustrator</option>
+      <option value="corel">CorelDRAW</option>
+      <option value="canva">Canva</option>
+      <option value="otro">Otro</option>
+    </select><br><br>
+
+    <!-- 3. Área de interés -->
+    <p>3. ¿En qué área del diseño gráfico te interesa más trabajar?</p>
+    <label><input type="radio" name="area" value="branding"> Branding</label><br>
+    <label><input type="radio" name="area" value="editorial"> Diseño editorial</label><br>
+    <label><input type="radio" name="area" value="ux"> Diseño UX/UI</label><br>
+    <label><input type="radio" name="area" value="publicidad"> Publicidad</label><br><br>
+
+    <!-- 4. Experiencia -->
+    <label for="experiencia">4. ¿Cuántos años de experiencia tienes en diseño?</label><br>
+    <input type="number" id="experiencia" name="experiencia" min="0" max="50"> años<br><br>
+
+    <!-- 5. Opinión -->
+    <label for="opinion">5. ¿Qué significa para ti el diseño gráfico?</label><br>
+    <textarea id="opinion" name="opinion" rows="4" cols="50" placeholder="Escribe tu respuesta aquí..."></textarea><br><br>
+
+    <!-- Botón de envío -->
+    <input type="submit" value="Enviar respuestas">
+
+  </form>
+   </body> 
+</html>
